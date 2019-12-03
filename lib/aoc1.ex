@@ -25,5 +25,3 @@ defmodule Aoc1 do
     end
   end
 end
-
-Aoc1.solve("../input1.txt")
