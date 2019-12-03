@@ -1,4 +1,4 @@
-defmodule Aoc2 do
+defmodule Aoc2_2 do
   def solve(input, value) do
     input
     |> File.read!()

@@ -1,4 +1,4 @@
-defmodule Aoc1 do
+defmodule Aoc1_2 do
   def solve(input) do
     input
     |> read_lines
