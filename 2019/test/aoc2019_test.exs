@@ -16,4 +16,9 @@ defmodule Aoc2019Test do
     assert Aoc3_1.solve("lib/3/input.txt") == 1064
     assert Aoc3_2.solve("lib/3/input.txt") == 25676
   end
+
+  test "aoc4" do
+    assert Aoc4_1.solve(367_479, 893_698) == 495
+    assert Aoc4_2.solve(367_479, 893_698) == 305
+  end
 end
