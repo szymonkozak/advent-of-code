@@ -11,4 +11,9 @@ defmodule Aoc2020Test do
     assert Aoc2_1.solve("lib/2/input.txt") == 640
     assert Aoc2_2.solve("lib/2/input.txt") == 472
   end
+
+  test "aoc3" do
+    assert Aoc3_1.solve("lib/3/input.txt") == 220
+    assert Aoc3_2.solve("lib/3/input.txt") == 2138320800
+  end
 end
