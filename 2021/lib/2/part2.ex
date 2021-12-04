@@ -1,3 +1,5 @@
+import Utils
+
 defmodule Aoc2_2 do
   def solve(input) do
     input
@@ -6,12 +8,6 @@ defmodule Aoc2_2 do
     |> Enum.map(fn [dir, value] -> {dir, String.to_integer(value)} end)
     |> calculate_positions()
     |> calculate_result()
-  end
-
-  defp read_lines(filename) do
-    filename
-    |> File.read!()
-    |> String.split("\n")
   end
 
   defp calculate_positions(steps) do
