@@ -2,13 +2,13 @@ defmodule Aoc4_1 do
   def solve(input) do
     [chosen | boards] = parse(input)
 
-    Enum.reduce_while(chosen, {boards, 0}, fn current, {boards, _} ->
+    Enum.reduce_while(chosen, boards, fn current, boards ->
       boards = mark(boards, current)
 
       if winner = Enum.find(boards, &is_winner?(&1)) do
         {:halt, {boards, unmarked_sum(winner) * current}}
       else
-        {:cont, {boards, 0}}
+        {:cont, boards}
       end
     end)
     |> elem(1)
