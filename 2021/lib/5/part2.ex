@@ -1,5 +1,3 @@
-import Utils
-
 defmodule Aoc5_2 do
   def solve(input) do
     parse(input)
@@ -20,7 +18,8 @@ defmodule Aoc5_2 do
   end
 
   def parse(input) do
-    read_lines(input)
+    File.read!(input)
+    |> String.split("\n")
     |> Enum.map(&String.split(&1, " -> "))
     |> Enum.map(fn points ->
       Enum.map(points, fn coords ->

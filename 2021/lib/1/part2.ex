@@ -1,9 +1,7 @@
-import Utils
-
 defmodule Aoc1_2 do
   def solve(input) do
-    input
-    |> read_lines
+    File.read!(input)
+    |> String.split("\n")
     |> Enum.map(&String.to_integer/1)
     |> count_increases()
   end

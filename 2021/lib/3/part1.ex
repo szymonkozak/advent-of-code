@@ -1,10 +1,8 @@
-import Utils
-
 defmodule Aoc3_1 do
   def solve(input) do
     freqs =
-      input
-      |> read_lines
+      File.read!(input)
+      |> String.split("\n")
       |> Enum.map(&String.graphemes/1)
       |> Enum.map(fn row ->
         Enum.map(row, &String.to_integer/1)
