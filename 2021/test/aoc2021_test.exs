@@ -36,4 +36,9 @@ defmodule Aoc2021Test do
     assert Aoc7_1.solve("lib/7/input.txt") == 344735
     assert Aoc7_2.solve("lib/7/input.txt") == 96798233
   end
+
+  test "aoc8" do
+    assert Aoc8_1.solve("lib/8/input.txt") == 416
+    assert Aoc8_2.solve("lib/8/input.txt") == 1043697
+  end
 end
