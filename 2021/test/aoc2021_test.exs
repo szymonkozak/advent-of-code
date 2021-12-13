@@ -51,4 +51,9 @@ defmodule Aoc2021Test do
     assert Aoc10_1.solve("lib/10/input.txt") == 367059
     assert Aoc10_2.solve("lib/10/input.txt") == 1952146692
   end
+
+  test "aoc11" do
+    assert Aoc11_1.solve("lib/11/input.txt") == 1601
+    assert Aoc11_2.solve("lib/11/input.txt") == 368
+  end
 end
