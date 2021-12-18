@@ -63,4 +63,9 @@ defmodule Aoc2021Test do
     assert Aoc13_2.solve("lib/13/input.txt", print: false) ==
              "###   ##  ###  #     ##  #  # #  # #   \n#  # #  # #  # #    #  # # #  #  # #   \n#  # #    #  # #    #  # ##   #### #   \n###  #    ###  #    #### # #  #  # #   \n# #  #  # #    #    #  # # #  #  # #   \n#  #  ##  #    #### #  # #  # #  # ####"
   end
+
+  test "aoc14" do
+    assert Aoc14_1.solve("lib/14/input.txt") == 2621
+    assert Aoc14_2.solve("lib/14/input.txt") == 2843834241366
+  end
 end
