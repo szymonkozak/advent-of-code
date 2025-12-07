@@ -26,4 +26,9 @@ defmodule Aoc2025Test do
     assert Aoc5_1.solve("lib/5/input.txt") == 770
     assert Aoc5_2.solve("lib/5/input.txt") == 357674099117260
   end
+
+  test "aoc6" do
+    assert Aoc6_1.solve("lib/6/input.txt") == 6299564383938
+    assert Aoc6_2.solve("lib/6/input.txt") == 11950004808442
+  end
 end
